@@ -6842,11 +6842,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aline\\Documents\\API de cadastro\\ApiCadastroClientes\\ApiCadastroClientes.csproj",
+      "projectUniqueName": "C:\\Users\\Aline\\Documents\\GitHub\\ApiCadastroClientes\\ApiCadastroClientes\\ApiCadastroClientes.csproj",
       "projectName": "ApiCadastroClientes",
-      "projectPath": "C:\\Users\\Aline\\Documents\\API de cadastro\\ApiCadastroClientes\\ApiCadastroClientes.csproj",
+      "projectPath": "C:\\Users\\Aline\\Documents\\GitHub\\ApiCadastroClientes\\ApiCadastroClientes\\ApiCadastroClientes.csproj",
       "packagesPath": "C:\\Users\\Aline\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aline\\Documents\\API de cadastro\\ApiCadastroClientes\\obj\\",
+      "outputPath": "C:\\Users\\Aline\\Documents\\GitHub\\ApiCadastroClientes\\ApiCadastroClientes\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Aline\\AppData\\Roaming\\NuGet\\NuGet.Config",
