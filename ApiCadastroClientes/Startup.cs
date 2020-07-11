@@ -27,14 +27,14 @@ namespace ApiCadastroClientes
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            services.AddControllers();
             services.AddDbContext<ApiCadastroClientesContext>(opt => 
             opt.UseMySql(Configuration.GetConnectionString("ApiCadastroClientesContext")));
 
-            services.AddControllers();
-
             services.AddCors(options =>
-            options.AddDefaultPolicy(policy =>
-            policy.AllowAnyOrigin()
+            options.AddDefaultPolicy(policy =>policy
+            .AllowAnyOrigin()
             .AllowAnyMethod()
             .AllowAnyHeader()
             ));
@@ -48,7 +48,7 @@ namespace ApiCadastroClientes
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
 
             app.UseCors();
 

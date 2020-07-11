@@ -80,10 +80,11 @@ namespace ApiCadastroClientes.Controllers
         [HttpPost]
         public async Task<ActionResult<Cliente>> PostCliente(Cliente cliente)
         {
+            DateTime data = DateTime.Now;
+            cliente.DataCadastro = data;
             _context.Clientes.Add(cliente);
             await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetCliente", new { id = cliente.Id }, cliente);
+            return CreatedAtAction(nameof(GetCliente), new {id = cliente.Id}, cliente);
         }
 
         // DELETE: api/Clientes/5
